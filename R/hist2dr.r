@@ -33,7 +33,7 @@ hist2dr <- function(x, y, xbrks, ybrks) {
         levels = 1:(length(ybrks) - 1) # bins = breaks - 1
     )
 
-    H <- new_hist2dr(table(xBins, yBins), xbrks, ybrks, xBins, yBins)
+    H <- hist2dr:::new_hist2dr(table(xBins, yBins), xbrks, ybrks, xBins, yBins)
 
     return(H)
 
